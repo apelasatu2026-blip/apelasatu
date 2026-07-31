@@ -176,11 +176,21 @@
     <i class="bi bi-list"></i>
 </button>
 
-<ul id="menu" class="hidden lg:flex gap-8 font-semibold">
+<ul id="menu" class="hidden lg:flex gap-8 font-semibold items-center">
     <li><a href="/" class="nav-underline hover:text-gold transition">Home</a></li>
     <li><a href="/profile" class="nav-underline hover:text-gold transition">Profile</a></li>
     <li><a href="/infografis" class="nav-underline hover:text-gold transition">Infografis</a></li>
     <li><a href="/listing" class="nav-underline text-gold">Listing</a></li>
+    <li>
+        <a href="https://www.facebook.com/share/162YAdnMNoj/" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition text-xl" title="Facebook">
+            <i class="bi bi-facebook"></i>
+        </a>
+    </li>
+    <li>
+        <a href="https://wa.me/6285696394878" target="_blank" rel="noopener noreferrer" class="bg-green-600 hover:bg-green-500 text-white px-4 py-2 rounded-full flex items-center gap-2 text-sm transition font-medium">
+            <i class="bi bi-whatsapp"></i> Hubungi WA
+        </a>
+    </li>
 </ul>
 
 </div>
@@ -190,6 +200,14 @@
     <a href="/profile" class="hover:text-gold transition">Profile</a>
     <a href="/infografis" class="hover:text-gold transition">Infografis</a>
     <a href="/listing" class="text-gold">Listing</a>
+    <div class="flex items-center gap-4 py-2 border-t border-forest-700 mt-2">
+        <a href="https://www.facebook.com/share/162YAdnMNoj/" target="_blank" rel="noopener noreferrer" class="text-gold text-2xl">
+            <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://wa.me/6285696394878" target="_blank" rel="noopener noreferrer" class="bg-green-600 hover:bg-green-500 text-white px-4 py-2 rounded-full text-sm flex items-center gap-2">
+            <i class="bi bi-whatsapp"></i> WhatsApp
+        </a>
+    </div>
 </div>
 
 </nav>
@@ -335,6 +353,16 @@
             Kecamatan Ranowulu &bull; Kota Bitung &bull; Sulawesi Utara
         </p>
 
+        <!-- LINK SOSIAL MEDIA FOOTER -->
+        <div class="mt-6 flex items-center justify-center gap-4">
+            <a href="https://www.facebook.com/share/162YAdnMNoj/" target="_blank" rel="noopener noreferrer" class="bg-white/10 hover:bg-gold hover:text-forest-900 w-10 h-10 rounded-full flex items-center justify-center transition text-lg" title="Facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://wa.me/6285696394878" target="_blank" rel="noopener noreferrer" class="bg-white/10 hover:bg-green-500 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition text-lg" title="WhatsApp Kontak Langsung">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+        </div>
+
         <hr class="border-white/10 my-8">
 
         <p class="text-sm text-gray-400">
@@ -345,6 +373,11 @@
 
 </footer>
 
+<!-- Tombol WhatsApp Melayang (Direct Call/Chat) -->
+<a href="https://wa.me/6285696394878" target="_blank" rel="noopener noreferrer" aria-label="Hubungi WhatsApp" class="fixed bottom-7 right-7 bg-green-500 hover:bg-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl shadow-xl transition-all hover:scale-110 z-50">
+    <i class="bi bi-whatsapp"></i>
+</a>
+
 
 
 <script>
@@ -352,13 +385,6 @@
     const menuBtn = document.getElementById('menuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
     menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
-
-    // =========================================================
-    // DATA TITIK PENTING (INTEREST POINT)
-    // Silahkan ganti lat/lng dan data di bawah ini dengan data
-    // asli / dari database (misalnya dikirim via @@json($poi))
-    // Koordinat contoh diatur di sekitar Kec. Ranowulu, Kota Bitung
-    // =========================================================
 
     const poiData = [
         {
@@ -419,13 +445,6 @@
         }
     ];
 
-    // Batas wilayah Kelurahan Apela I (garis putus-putus, hasil rekonstruksi
-    // visual dari screenshot Google Maps yang dibagikan pengguna).
-    // CATATAN: koordinat berikut adalah PERKIRAAN berdasarkan estimasi piksel
-    // pada screenshot, bukan data GPS resmi. Untuk akurasi penuh, silahkan
-    // ekspor batas wilayah resmi (KML/Shapefile) dari Google My Maps atau
-    // instansi terkait (BIG / Pemerintah Kota Bitung), lalu ganti array
-    // `batasWilayah` di bawah ini dengan koordinat tersebut.
     const batasWilayah = [
         [1.498942, 125.092552],
         [1.486376, 125.074300],
@@ -435,36 +454,28 @@
         [1.498942, 125.092552]
     ];
 
-    // Titik tengah Kelurahan Apela I (Kec. Ranowulu, Kota Bitung, Sulawesi Utara)
-    // Sumber: Google Maps - https://maps.app.goo.gl/W7RGTy9HTYmPFzd97
     const centerLat = 1.4871242;
     const centerLng = 125.0883625;
 
     // ==== INISIALISASI PETA (TAMPILAN SATELIT) ====
     const map = L.map('map', { zoomControl: true }).setView([centerLat, centerLng], 16);
 
-    // Basemap satelit (Esri World Imagery - gratis, tanpa API key)
     const satelliteLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
         attribution: 'Tiles &copy; Esri &mdash; Source: Esri, Maxar, Earthstar Geographics',
         maxZoom: 19
     });
 
-    // Label nama jalan/tempat di atas citra satelit (mode Hybrid, mirip Google Satellite)
     const labelsLayer = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}', {
         attribution: '',
         maxZoom: 19
     });
 
-    // Peta jalan biasa (opsional, untuk perbandingan)
     const streetLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; OpenStreetMap contributors',
         maxZoom: 19
     });
 
-    // Grup "Satelit + Label" (mode Hybrid, mirip Google Satellite)
     const hybridGroup = L.layerGroup([satelliteLayer, labelsLayer]);
-
-    // Default tampilan: Satelit + Label
     hybridGroup.addTo(map);
 
     L.control.layers({
@@ -493,11 +504,8 @@
     }).addTo(map);
 
     boundaryLine.bindTooltip('Batas Wilayah Kelurahan Apela I', { sticky: true });
-
-    // Sesuaikan tampilan peta agar seluruh batas wilayah terlihat
     map.fitBounds(boundaryLine.getBounds(), { padding: [30, 30] });
 
-    // Marker batas kelurahan (opsional, penanda pusat wilayah)
     L.marker([centerLat, centerLng], {
         icon: L.divIcon({
             className: '',

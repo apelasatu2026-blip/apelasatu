@@ -374,11 +374,21 @@
     <i class="bi bi-list"></i>
 </button>
 
-<ul id="menu" class="hidden lg:flex gap-8 font-semibold">
+<ul id="menu" class="hidden lg:flex gap-8 font-semibold items-center">
     <li><a href="/" class="nav-underline active text-gold">Home</a></li>
     <li><a href="/profile" class="nav-underline hover:text-gold transition">Profile</a></li>
     <li><a href="/infografis" class="nav-underline hover:text-gold transition">Infografis</a></li>
     <li><a href="/listing" class="nav-underline hover:text-gold transition">Listing</a></li>
+    <li>
+        <a href="https://www.facebook.com/share/162YAdnMNoj/" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition text-xl" title="Facebook">
+            <i class="bi bi-facebook"></i>
+        </a>
+    </li>
+    <li>
+        <a href="https://wa.me/6285696394878" target="_blank" rel="noopener noreferrer" class="bg-green-600 hover:bg-green-500 text-white px-4 py-2 rounded-full flex items-center gap-2 text-sm transition font-medium" title="Hubungi WhatsApp">
+            <i class="bi bi-whatsapp"></i> Hubungi WA
+        </a>
+    </li>
 </ul>
 
 </div>
@@ -388,6 +398,14 @@
     <a href="/profile" class="hover:text-gold transition py-1">Profile</a>
     <a href="/infografis" class="hover:text-gold transition py-1">Infografis</a>
     <a href="/listing" class="hover:text-gold transition py-1">Listing</a>
+    <div class="flex items-center gap-4 py-2 border-t border-forest-700 mt-2">
+        <a href="https://www.facebook.com/share/162YAdnMNoj/" target="_blank" rel="noopener noreferrer" class="text-gold text-2xl">
+            <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://wa.me/6285696394878" target="_blank" rel="noopener noreferrer" class="bg-green-600 hover:bg-green-500 text-white px-4 py-2 rounded-full text-sm flex items-center gap-2">
+            <i class="bi bi-whatsapp"></i> WhatsApp
+        </a>
+    </div>
 </div>
 
 </nav>
@@ -400,7 +418,7 @@
 
 <section class="relative overflow-hidden">
 
-<img src="{{asset('images/apela.jpg')}}"
+<img src="{{ asset('images/apela.jpg') }}"
 class="hero-bg w-full h-[500px] md:h-[640px] object-cover">
 
 <div class="absolute inset-0 bg-gradient-to-t from-forest-900/95 via-forest-900/70 to-forest-900/40 overflow-hidden">
@@ -502,7 +520,8 @@ class="hero-bg w-full h-[500px] md:h-[640px] object-cover">
 </div>
 
 <div class="relative">
-    <img src="{{asset('images/desa.jpg')}}"
+    <!-- BINGKAI FOTO MENGGUNAKAN assets/kelurahan.jpeg -->
+    <img src="{{ asset('assets/kelurahan.jpeg') }}"
     alt="Kelurahan Apela I"
     class="rounded-3xl shadow-xl w-full h-[320px] md:h-[420px] object-cover transition duration-500 hover:scale-[1.02]">
 
@@ -677,6 +696,16 @@ class="hero-bg w-full h-[500px] md:h-[640px] object-cover">
     Kecamatan Ranowulu • Kota Bitung • Sulawesi Utara
 </p>
 
+<!-- LINK SOSIAL MEDIA FOOTER -->
+<div class="mt-6 flex items-center justify-center gap-4">
+    <a href="https://www.facebook.com/share/162YAdnMNoj/" target="_blank" rel="noopener noreferrer" class="bg-white/10 hover:bg-gold hover:text-forest-900 w-10 h-10 rounded-full flex items-center justify-center transition text-lg" title="Facebook">
+        <i class="bi bi-facebook"></i>
+    </a>
+    <a href="https://wa.me/6285696394878" target="_blank" rel="noopener noreferrer" class="bg-white/10 hover:bg-green-500 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition text-lg" title="WhatsApp Kontak Langsung">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+</div>
+
 <p class="mt-5 text-gray-400 text-sm">
     © 2026 Sistem Informasi Kelurahan Apela I
 </p>
@@ -684,6 +713,11 @@ class="hero-bg w-full h-[500px] md:h-[640px] object-cover">
 </div>
 
 </footer>
+
+<!-- Tombol WhatsApp Melayang (Direct Call/Chat) -->
+<a href="https://wa.me/6285696394878" target="_blank" rel="noopener noreferrer" aria-label="Hubungi WhatsApp" class="fixed bottom-20 right-7 bg-green-500 hover:bg-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl shadow-xl transition-all hover:scale-110 z-50">
+    <i class="bi bi-whatsapp"></i>
+</a>
 
 <!-- Tombol kembali ke atas -->
 <button id="backToTop" aria-label="Kembali ke atas">

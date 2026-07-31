@@ -249,11 +249,21 @@
     <i class="bi bi-list"></i>
 </button>
 
-<ul id="menu" class="hidden lg:flex gap-8 font-semibold">
+<ul id="menu" class="hidden lg:flex gap-8 font-semibold items-center">
     <li><a href="/" class="nav-underline hover:text-gold transition">Home</a></li>
     <li><a href="/profile" class="nav-underline text-gold">Profile</a></li>
     <li><a href="/infografis" class="nav-underline hover:text-gold transition">Infografis</a></li>
     <li><a href="/listing" class="nav-underline hover:text-gold transition">Listing</a></li>
+    <li>
+        <a href="https://www.facebook.com/share/162YAdnMNoj/" target="_blank" rel="noopener noreferrer" class="hover:text-gold transition text-xl" title="Facebook">
+            <i class="bi bi-facebook"></i>
+        </a>
+    </li>
+    <li>
+        <a href="https://wa.me/6285696394878" target="_blank" rel="noopener noreferrer" class="bg-green-600 hover:bg-green-500 text-white px-4 py-2 rounded-full flex items-center gap-2 text-sm transition font-medium">
+            <i class="bi bi-whatsapp"></i> Hubungi WA
+        </a>
+    </li>
 </ul>
 
 </div>
@@ -263,6 +273,14 @@
     <a href="/profile" class="text-gold">Profile</a>
     <a href="/infografis" class="hover:text-gold transition">Infografis</a>
     <a href="/listing" class="hover:text-gold transition">Listing</a>
+    <div class="flex items-center gap-4 py-2 border-t border-forest-700 mt-2">
+        <a href="https://www.facebook.com/share/162YAdnMNoj/" target="_blank" rel="noopener noreferrer" class="text-gold text-2xl">
+            <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://wa.me/6285696394878" target="_blank" rel="noopener noreferrer" class="bg-green-600 hover:bg-green-500 text-white px-4 py-2 rounded-full text-sm flex items-center gap-2">
+            <i class="bi bi-whatsapp"></i> WhatsApp
+        </a>
+    </div>
 </div>
 
 </nav>
@@ -271,10 +289,10 @@
 
 
 <!--======================
-        HERO
+        HERO (BACKGROUND kelurahan.jpeg DITAMBAHKAN DI SINI)
 =======================-->
 
-<section class="relative bg-gradient-to-br from-forest-900 to-forest-700 text-white py-20 md:py-28 overflow-hidden hero-pattern">
+<section class="relative bg-cover bg-center text-white py-20 md:py-28 overflow-hidden hero-pattern" style="background-image: linear-gradient(rgba(20, 83, 45, 0.88), rgba(20, 83, 45, 0.88)), url('{{ asset('assets/kelurahan.jpeg') }}');">
 
     <div class="max-w-7xl mx-auto px-6 md:px-10 text-center relative z-10">
 
@@ -694,11 +712,14 @@
             Kecamatan Ranowulu &bull; Kota Bitung &bull; Sulawesi Utara
         </p>
 
-        <div class="flex items-center justify-center gap-3 mt-8">
-            <a href="#" class="w-10 h-10 rounded-full bg-white/10 hover:bg-gold hover:text-forest-900 flex items-center justify-center transition"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="w-10 h-10 rounded-full bg-white/10 hover:bg-gold hover:text-forest-900 flex items-center justify-center transition"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="w-10 h-10 rounded-full bg-white/10 hover:bg-gold hover:text-forest-900 flex items-center justify-center transition"><i class="bi bi-whatsapp"></i></a>
-            <a href="#" class="w-10 h-10 rounded-full bg-white/10 hover:bg-gold hover:text-forest-900 flex items-center justify-center transition"><i class="bi bi-envelope-fill"></i></a>
+        <!-- LINK SOSIAL MEDIA FOOTER -->
+        <div class="mt-6 flex items-center justify-center gap-4">
+            <a href="https://www.facebook.com/share/162YAdnMNoj/" target="_blank" rel="noopener noreferrer" class="bg-white/10 hover:bg-gold hover:text-forest-900 w-10 h-10 rounded-full flex items-center justify-center transition text-lg" title="Facebook">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://wa.me/6285696394878" target="_blank" rel="noopener noreferrer" class="bg-white/10 hover:bg-green-500 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition text-lg" title="WhatsApp Kontak Langsung">
+                <i class="bi bi-whatsapp"></i>
+            </a>
         </div>
 
         <hr class="border-white/10 my-8">
@@ -711,50 +732,31 @@
 
 </footer>
 
-
+<!-- Tombol WhatsApp Melayang (Direct Call/Chat) -->
+<a href="https://wa.me/6285696394878" target="_blank" rel="noopener noreferrer" aria-label="Hubungi WhatsApp" class="fixed bottom-7 right-7 bg-green-500 hover:bg-green-600 text-white w-12 h-12 rounded-full flex items-center justify-center text-2xl shadow-xl transition-all hover:scale-110 z-50">
+    <i class="bi bi-whatsapp"></i>
+</a>
 
 <script>
     // ==== MOBILE MENU ====
     const menuBtn = document.getElementById('menuBtn');
     const mobileMenu = document.getElementById('mobileMenu');
-    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+    menuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+    });
 
-    // ==== SCROLL REVEAL ANIMATIONS ====
-    const revealEls = document.querySelectorAll('.fade-up, .fade-left, .fade-right, .fade-scale, .timeline-item');
-    const revealObserver = new IntersectionObserver((entries) => {
+    // ==== SCROLL OBSERVER ====
+    const observerOptions = { threshold: 0.1 };
+
+    const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('show');
-                revealObserver.unobserve(entry.target);
             }
         });
-    }, { threshold: 0.15 });
-    revealEls.forEach(el => revealObserver.observe(el));
+    }, observerOptions);
 
-    // ==== ANIMATED COUNTERS ====
-    const counters = document.querySelectorAll('.stat-num');
-    const counterObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (!entry.isIntersecting) return;
-
-            const el = entry.target;
-            const target = parseInt(el.dataset.count, 10);
-            const suffix = el.dataset.suffix || '';
-            const duration = 1400;
-            const start = performance.now();
-
-            function tick(now){
-                const progress = Math.min((now - start) / duration, 1);
-                const eased = 1 - Math.pow(1 - progress, 3);
-                el.textContent = Math.round(eased * target) + suffix;
-                if (progress < 1) requestAnimationFrame(tick);
-            }
-
-            requestAnimationFrame(tick);
-            counterObserver.unobserve(el);
-        });
-    }, { threshold: 0.5 });
-    counters.forEach(el => counterObserver.observe(el));
+    document.querySelectorAll('.fade-up, .fade-left, .fade-right, .fade-scale, .timeline-item').forEach(el => observer.observe(el));
 </script>
 
 </body>
