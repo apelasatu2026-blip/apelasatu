@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Kelurahan Apela I</title>
+<title>Kelurahan Apela Satu</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -365,7 +365,7 @@
          class="w-10 h-10 object-contain">
 
     <div>
-        <p class="text-lg font-bold leading-none">Kelurahan Apela I</p>
+        <p class="text-lg font-bold leading-none">Kelurahan Apela Satu</p>
         <p class="text-xs text-gray-200">Kota Bitung</p>
     </div>
 </a>
@@ -440,11 +440,11 @@ class="hero-bg w-full h-[500px] md:h-[640px] object-cover">
 </h1>
 
 <h2 class="hero-sub text-xl md:text-3xl lg:text-4xl mt-3 font-light text-gray-100">
-    Website Resmi Kelurahan Apela I
+    Website Resmi Kelurahan Apela Satu
 </h2>
 
 <p class="hero-desc mt-6 text-base md:text-lg leading-relaxed text-gray-200">
-    Kelurahan Apela I, Kecamatan Ranowulu,
+    Kelurahan Apela Satu, Kecamatan Ranowulu,
     Kota Bitung, Sulawesi Utara — melayani
     dengan transparan, membangun bersama masyarakat.
 </p>
@@ -489,11 +489,11 @@ class="hero-bg w-full h-[500px] md:h-[640px] object-cover">
 <span class="text-forest-700 font-bold tracking-widest uppercase text-sm">Profil Wilayah</span>
 
 <h1 class="text-3xl md:text-5xl font-bold mt-3 text-forest-900">
-    Tentang Kelurahan Apela I
+    Tentang Kelurahan Apela Satu
 </h1>
 
 <p class="text-gray-600 mt-6 leading-loose text-base md:text-lg">
-    Kelurahan Apela I merupakan salah satu kelurahan yang berada
+    Kelurahan Apela Satu merupakan salah satu kelurahan yang berada
     di Kecamatan Ranowulu, Kota Bitung, Provinsi Sulawesi Utara.
     Kelurahan ini memiliki berbagai potensi yang dapat dikembangkan
     baik dalam bidang sosial, ekonomi maupun pembangunan berkelanjutan.
@@ -522,7 +522,7 @@ class="hero-bg w-full h-[500px] md:h-[640px] object-cover">
 <div class="relative">
     <!-- BINGKAI FOTO MENGGUNAKAN assets/kelurahan.jpeg -->
     <img src="{{ asset('assets/kelurahan.jpeg') }}"
-    alt="Kelurahan Apela I"
+    alt="Kelurahan Apela Satu"
     class="rounded-3xl shadow-xl w-full h-[320px] md:h-[420px] object-cover transition duration-500 hover:scale-[1.02]">
 
     <div class="absolute -bottom-6 -left-6 bg-forest-800 text-white rounded-2xl px-6 py-4 shadow-lg hidden sm:block hover:-translate-y-1 transition duration-300">
@@ -549,12 +549,12 @@ class="hero-bg w-full h-[500px] md:h-[640px] object-cover">
 <span class="text-gold font-bold tracking-widest uppercase text-sm">Unggulan Kami</span>
 
 <h1 class="text-3xl md:text-5xl font-bold mt-3">
-    Potensi Kelurahan Apela I
+    Potensi Kelurahan Apela Satu
 </h1>
 
 <p class="mt-6 text-gray-200 max-w-2xl mx-auto text-base md:text-lg">
     Potensi wisata, pertanian dan pemberdayaan masyarakat
-    yang menjadi kekuatan pembangunan Kelurahan Apela I.
+    yang menjadi kekuatan pembangunan Kelurahan Apela Satu.
 </p>
 
 <div class="stagger-group grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-10 mt-14 md:mt-20">
@@ -616,7 +616,7 @@ class="hero-bg w-full h-[500px] md:h-[640px] object-cover">
     </h1>
     <p class="text-gray-600 mt-6 leading-loose text-base md:text-lg">
         Empat pilar utama yang menjadi tolok ukur kemajuan dan
-        keberlanjutan pembangunan di Kelurahan Apela I.
+        keberlanjutan pembangunan di Kelurahan Apela Satu.
     </p>
 </div>
 
@@ -685,7 +685,7 @@ class="hero-bg w-full h-[500px] md:h-[640px] object-cover">
          class="w-14 h-14 object-contain">
 
     <div>
-        <p>Kelurahan Apela I</p>
+        <p>Kelurahan Apela Satu</p>
         <p class="text-sm text-gray-300 font-normal">
             Pemerintah Kota Bitung
         </p>
@@ -707,7 +707,7 @@ class="hero-bg w-full h-[500px] md:h-[640px] object-cover">
 </div>
 
 <p class="mt-5 text-gray-400 text-sm">
-    © 2026 Sistem Informasi Kelurahan Apela I
+    © 2026 Sistem Informasi Kelurahan Apela Satu
 </p>
 
 </div>

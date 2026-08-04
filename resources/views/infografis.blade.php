@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Infografis - Kelurahan Apela I</title>
+<title>Infografis - Kelurahan Apela Satu</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -101,7 +101,7 @@
     <img src="{{ asset('assets/logobitung.png') }}"
          alt="Logo Kota Bitung"
          class="w-10 h-10 object-contain">
-    Kelurahan Apela I
+    Kelurahan Apela Satu
 </a>
 
 <button id="menuBtn" class="lg:hidden text-3xl">
@@ -159,12 +159,12 @@
         </span>
 
         <h1 class="text-3xl md:text-5xl font-extrabold">
-            Infografis Kelurahan Apela I
+            Infografis Kelurahan Apela Satu
         </h1>
 
         <p class="mt-4 text-gray-200 max-w-2xl mx-auto text-base md:text-lg">
             Gambaran data kependudukan, sosial, dan demografi
-            Kelurahan Apela I berdasarkan data terbaru.
+            Kelurahan Apela Satu berdasarkan data terbaru.
         </p>
 
     </div>
@@ -478,7 +478,7 @@
             <img src="{{ asset('assets/logobitung.png') }}"
                  alt="Logo Kota Bitung"
                  class="w-14 h-14 object-contain">
-            Kelurahan Apela I
+            Kelurahan Apela Satu
         </h1>
 
         <p class="mt-5 text-gray-300">
@@ -498,7 +498,7 @@
         <hr class="border-white/10 my-8">
 
         <p class="text-sm text-gray-400">
-            © 2026 Sistem Informasi Kelurahan Apela I
+            © 2026 Sistem Informasi Kelurahan Apela Satu
         </p>
 
     </div>

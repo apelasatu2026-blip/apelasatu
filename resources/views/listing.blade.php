@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Listing / Peta - Kelurahan Apela I</title>
+<title>Listing / Peta - Kelurahan Apela Satu</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -169,7 +169,7 @@
     <img src="{{ asset('assets/logobitung.png') }}"
          alt="Logo Kota Bitung"
          class="w-10 h-10 object-contain">
-    Kelurahan Apela I
+    Kelurahan Apela Satu
 </a>
 
 <button id="menuBtn" class="lg:hidden text-3xl">
@@ -227,17 +227,17 @@
         </span>
 
         <h1 class="text-3xl md:text-5xl font-extrabold">
-            PETA KELURAHAN APELA I
+            PETA KELURAHAN Apela Satu
         </h1>
 
         <p class="mt-4 text-gray-200 max-w-2xl mx-auto text-base md:text-lg">
-            Menampilkan peta Kelurahan Apela I dengan
+            Menampilkan peta Kelurahan Apela Satu dengan
             <em>interest point</em> atau titik-titik penting yang ada
-            di Kelurahan Apela I.
+            di Kelurahan Apela Satu.
         </p>
 
         <p class="mt-3 text-gray-300 max-w-2xl mx-auto text-sm">
-            Apela I adalah salah satu kelurahan di Kecamatan Ranowulu,
+            Apela Satu adalah salah satu kelurahan di Kecamatan Ranowulu,
             Kota Bitung, Sulawesi Utara, Indonesia.
         </p>
 
@@ -346,7 +346,7 @@
             <img src="{{ asset('assets/logobitung.png') }}"
                  alt="Logo Kota Bitung"
                  class="w-14 h-14 object-contain">
-            Kelurahan Apela I
+            Kelurahan Apela Satu
         </h1>
 
         <p class="mt-5 text-gray-300">
@@ -366,7 +366,7 @@
         <hr class="border-white/10 my-8">
 
         <p class="text-sm text-gray-400">
-            © 2026 Sistem Informasi Kelurahan Apela I
+            © 2026 Sistem Informasi Kelurahan Apela Satu
         </p>
 
     </div>
@@ -393,7 +393,7 @@
             icon: "bi-tree-fill",
             lat: 1.496549,
             lng: 125.084683,
-            deskripsi: "Area perkebunan yang berada di bagian utara Kelurahan Apela I."
+            deskripsi: "Area perkebunan yang berada di bagian utara Kelurahan Apela Satu."
         },
         {
             nama: "GMIM Abraham Duasudara",
@@ -401,7 +401,7 @@
             icon: "bi-cross",
             lat: 1.490325,
             lng: 125.106824,
-            deskripsi: "Gereja GMIM yang berada di sisi timur Kelurahan Apela I."
+            deskripsi: "Gereja GMIM yang berada di sisi timur Kelurahan Apela Satu."
         },
         {
             nama: "Kios Batman",
@@ -484,7 +484,7 @@
         'Peta Jalan': streetLayer
     }, null, { position: 'topright', collapsed: true }).addTo(map);
 
-    // ==== GARIS BATAS WILAYAH KELURAHAN APELA I ====
+    // ==== GARIS BATAS WILAYAH KELURAHAN Apela Satu ====
     const boundaryLine = L.polygon(batasWilayah, {
         color: '#ffffff',
         weight: 4,
@@ -503,7 +503,7 @@
         dashOffset: '10'
     }).addTo(map);
 
-    boundaryLine.bindTooltip('Batas Wilayah Kelurahan Apela I', { sticky: true });
+    boundaryLine.bindTooltip('Batas Wilayah Kelurahan Apela Satu', { sticky: true });
     map.fitBounds(boundaryLine.getBounds(), { padding: [30, 30] });
 
     L.marker([centerLat, centerLng], {
@@ -513,7 +513,7 @@
             iconSize: [34, 34],
             iconAnchor: [17, 34]
         })
-    }).addTo(map).bindPopup('<b>Pusat Kelurahan Apela I</b>');
+    }).addTo(map).bindPopup('<b>Pusat Kelurahan Apela Satu</b>');
 
     const markers = [];
 

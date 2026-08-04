@@ -7,7 +7,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Profil Kelurahan Apela I</title>
+<title>Profil Kelurahan Apela Satu</title>
 
 <script src="https://cdn.tailwindcss.com"></script>
 
@@ -240,7 +240,7 @@
          class="w-10 h-10 object-contain">
 
     <div>
-        <p class="text-lg font-bold leading-none">Kelurahan Apela I</p>
+        <p class="text-lg font-bold leading-none">Kelurahan Apela Satu</p>
         <p class="text-xs text-gray-200">Kota Bitung</p>
     </div>
 </a>
@@ -302,7 +302,7 @@
         </span>
 
         <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold">
-            Profil Kelurahan Apela I
+            Profil Kelurahan Apela Satu
         </h1>
 
         <p class="mt-5 text-gray-200 max-w-2xl mx-auto text-sm md:text-lg flex items-center justify-center gap-2 flex-wrap">
@@ -329,7 +329,7 @@
 
     <div class="bg-white rounded-2xl md:rounded-3xl border-l-4 border-forest-600 shadow-sm p-6 md:p-10 fade-up">
         <p class="text-gray-600 leading-loose text-sm md:text-lg text-justify md:text-left">
-            Kelurahan Apela I merupakan salah satu kelurahan yang berada
+            Kelurahan Apela Satu merupakan salah satu kelurahan yang berada
             di Kecamatan Ranowulu, Kota Bitung, Provinsi Sulawesi Utara.
             Kelurahan ini memiliki potensi sumber daya alam, budaya,
             serta masyarakat yang aktif dalam pembangunan daerah.
@@ -353,11 +353,11 @@
     <div class="max-w-5xl mx-auto px-6 md:px-10">
 
         <p class="text-center text-forest-700 font-bold tracking-widest uppercase text-xs md:text-sm mb-2 fade-up">Asal Usul</p>
-        <h2 class="text-center text-3xl md:text-5xl font-bold text-forest-900 mb-3 fade-up">Sejarah Kelurahan Apela I</h2>
+        <h2 class="text-center text-3xl md:text-5xl font-bold text-forest-900 mb-3 fade-up">Sejarah Kelurahan Apela Satu</h2>
         <div class="w-16 md:w-20 h-1.5 bg-gold rounded-full mx-auto mb-4 fade-up"></div>
         <p class="text-center text-gray-500 max-w-2xl mx-auto text-sm md:text-base mb-14 md:mb-20 fade-up">
             Catatan sejarah terbentuknya pemukiman yang kelak dikenal sebagai
-            Kelurahan Apela I, dirangkum dari arsip catatan sejarah kelurahan.
+            Kelurahan Apela Satu, dirangkum dari arsip catatan sejarah kelurahan.
         </p>
 
         <div class="timeline-wrap">
@@ -441,7 +441,7 @@
                                 Hasil musyawarah menetapkan nama
                                 <b class="text-gold">"APELA"</b>, yang berarti
                                 <i>Tanah Subur, Tanah Merah</i>, menjadi cikal bakal
-                                nama Kelurahan Apela I hingga saat ini.
+                                nama Kelurahan Apela Satu hingga saat ini.
                             </p>
                         </div>
                     </div>
@@ -586,7 +586,7 @@
                 <h4 class="font-bold text-forest-900 text-lg mb-2">Masyarakat</h4>
                 <p class="text-gray-600 text-sm md:text-base leading-relaxed">
                     Informasi jumlah penduduk dapat disesuaikan
-                    dengan data terbaru dari Kelurahan Apela I.
+                    dengan data terbaru dari Kelurahan Apela Satu.
                 </p>
             </div>
 
@@ -624,11 +624,11 @@
 
         <div class="avatar-wrap">
             <div class="avatar-circle">
-                <img src="{{ asset('assets/paklurah.jpeg') }}" alt="Lurah Kelurahan Apela I">
+                <img src="{{ asset('assets/paklurah.jpeg') }}" alt="Lurah Kelurahan Apela Satu">
             </div>
         </div>
 
-        <h4 class="font-bold text-forest-900 text-lg md:text-xl">Lurah Kelurahan Apela I</h4>
+        <h4 class="font-bold text-forest-900 text-lg md:text-xl">Lurah Kelurahan Apela Satu</h4>
         <p class="text-gray-500 text-sm md:text-base mt-1">HERLING GAHIWU, S.Sos</p>
         <p class="text-gray-500 text-xs md:text-sm">NIP. 19770627 200501 1 044</p>
 
@@ -705,7 +705,7 @@
             <img src="{{ asset('assets/logobitung.png') }}"
                  alt="Logo Kota Bitung"
                  class="w-14 h-14 object-contain">
-            Kelurahan Apela I
+            Kelurahan Apela Satu
         </h1>
 
         <p class="mt-5 text-gray-300">
@@ -725,7 +725,7 @@
         <hr class="border-white/10 my-8">
 
         <p class="text-sm text-gray-400">
-            © 2026 Sistem Informasi Kelurahan Apela I
+            © 2026 Sistem Informasi Kelurahan Apela Satu
         </p>
 
     </div>
