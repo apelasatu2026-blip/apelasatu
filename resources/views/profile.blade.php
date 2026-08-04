@@ -479,22 +479,22 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 text-center">
 
             <div>
-                <h3 class="stat-num text-3xl md:text-5xl font-extrabold text-gold" data-count="400">0</h3>
+                <h3 class="stat-num text-3xl md:text-5xl font-extrabold text-gold" data-count="400">400</h3>
                 <p class="mt-2 text-xs md:text-sm tracking-wide text-gray-200">JUMLAH PENDUDUK</p>
             </div>
 
             <div>
-                <h3 class="stat-num text-3xl md:text-5xl font-extrabold text-gold" data-count="95" data-suffix="%">0%</h3>
+                <h3 class="stat-num text-3xl md:text-5xl font-extrabold text-gold" data-count="95" data-suffix="%">95%</h3>
                 <p class="mt-2 text-xs md:text-sm tracking-wide text-gray-200">PELAYANAN PUBLIK</p>
             </div>
 
             <div>
-                <h3 class="stat-num text-3xl md:text-5xl font-extrabold text-gold" data-count="2">0</h3>
+                <h3 class="stat-num text-3xl md:text-5xl font-extrabold text-gold" data-count="2">2</h3>
                 <p class="mt-2 text-xs md:text-sm tracking-wide text-gray-200">LINGKUNGAN</p>
             </div>
 
             <div>
-                <h3 class="stat-num text-3xl md:text-5xl font-extrabold text-gold" data-count="10" data-suffix="+">0+</h3>
+                <h3 class="stat-num text-3xl md:text-5xl font-extrabold text-gold" data-count="10" data-suffix="+">10+</h3>
                 <p class="mt-2 text-xs md:text-sm tracking-wide text-gray-200">PROGRAM UMKM</p>
             </div>
 
